@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Typo.css - 优化阅读体验的网页排版样式表</title>
+    <link rel="stylesheet" href="http://typo.reqianduan.com/typo.css">
+    <style type="text/css">
+        *, :after, :before{
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+        body {
+            margin: 0;
+            background: #fff;
+        }
+        .half{
+            width: 50%;
+            padding: 25px;
+            float: left;
+        }
+        @media(max-width:768px){
+            .half{
+                width: 100%;
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="half half-en">
+    <div class="typo">
+        <h1><a href="https://github.com/xiangming/typo" target="_blank">typo.css</a></h1>
+        <p><strong>typo.css</strong> is a typography stylesheet to make your content readable. Current page is using typo.css and <a href="http://www.reqianduan.com/">热前端</a>.</p>
+        <blockquote><p><strong>typo.css</strong> is not a reset stylesheet.</p>
+        </blockquote><p>It is designed for readable article content. If you are looking for a reset css, you are watching the wrong repository.</p>
+
+        <h2>Installation</h2>
+        <p>Install with <a href="http://bower.io">bower</a>:</p>
+        <pre><code>$ bower install typo</code></pre>
+        <p>If you don't use bower, you can just grab the css file
+        from <a href="https://github.com/xiangming/typo">GitHub</a>. There is no dependency of this project.</p>
+
+        <h2>API</h2>
+        <p>For readable content, wrapper them under the <code>.typo</code> class, and everything
+        would be OK now:</p>
+        <pre><code class="lang-html">&lt;div class=&quot;typo&quot;&gt;
+            &lt;h1&gt;Heading&lt;/h1&gt;
+            &lt;p&gt;Paragraph of contents.&lt;/p&gt;
+            ...
+        &lt;/div&gt;</code></pre>
+
+        <h2>Tags</h2>
+        <p><strong>typo.css</strong> only supports selected tags which are commonly used in an article.</p>
+        <table>
+        <thead><tr>
+        <th>Tag Name</th>
+        <th>Description</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+        <td>h1 - h6</td>
+        <td>headings for title</td>
+        </tr>
+        <tr>
+        <td>p</td>
+        <td>paragraph</td>
+        </tr>
+        <tr>
+        <td>a</td>
+        <td>anchor links</td>
+        </tr>
+        <tr>
+        <td>strong b</td>
+        <td>emphasis in bold style</td>
+        </tr>
+        <tr>
+        <td>em i</td>
+        <td>emphasis in italic style</td>
+        </tr>
+        <tr>
+        <td>img</td>
+        <td>image</td>
+        </tr>
+        <tr>
+        <td>figure</td>
+        <td>figure wrapper for images</td>
+        </tr>
+        <tr>
+        <td>figcaption</td>
+        <td>figcaption in figure</td>
+        </tr>
+        <tr>
+        <td>hr</td>
+        <td>separator</td>
+        </tr>
+        <tr>
+        <td>blockquote</td>
+        <td>style for quotes</td>
+        </tr>
+        <tr>
+        <td>ul ol li</td>
+        <td>ordered and unordered list</td>
+        </tr>
+        <tr>
+        <td>pre</td>
+        <td>code block</td>
+        </tr>
+        <tr>
+        <td>code tt</td>
+        <td>inline code</td>
+        </tr>
+        <tr>
+        <td>table</td>
+        <td>tables</td>
+        </tr>
+        <tr>
+        <td>iframe</td>
+        <td>embed iframe style</td>
+        </tr>
+        </tbody>
+        </table>
+
+        <h3>Headings</h3>
+        <p>Headings are tags <code>&lt;h1&gt;</code>, <code>&lt;h2&gt;</code>, <code>&lt;h3&gt;</code>, <code>&lt;h4&gt;</code>, <code>&lt;h5&gt;</code> and <code>&lt;h6&gt;</code>.
+        But the most commonly used tags are <code>&lt;h1&gt;</code>, <code>&lt;h2&gt;</code>, and <code>&lt;h3&gt;</code>.</p>
+
+        <h3>Emphasis</h3>
+        <p>Emphasis works on something <strong>important</strong> or <em>valuable</em>. <code>&lt;b&gt;</code> and <code>&lt;i&gt;</code>
+        are not designed for this purpose, you should always use <code>&lt;strong&gt;</code> and <code>&lt;em&gt;</code>.</p>
+
+        <h3>Links &amp; Images</h3>
+        <p><a href="https://github.com/xiangming/typo">Links</a> are the soul of internet.</p>
+        <figure><img src="http://news.oneapm.com/content/images/2015/07/u-4078431349-436439537-fm-21-gp-0.jpg" alt="beauty of web design" /></figure>
+        <p>Images can be wrappered in a <code>&lt;figure&gt;</code> tag:</p>
+        <figure><img src="http://news.oneapm.com/content/images/2015/07/u-4078431349-436439537-fm-21-gp-0.jpg" alt="beauty of web design" /><figcaption>The Beauty of Web Design</figcaption></figure>
+
+        <h3>List</h3>
+        <p>There is ordered list <code>&lt;ol&gt;</code> and unordered list <code>&lt;ul&gt;</code>.</p>
+        <ul>
+            <li>
+                Unordered list is tagged in
+                <code>&lt;ul&gt;</code>
+            </li>
+            <li>
+                Another item of unordered list
+                <ol>
+                    <li>An ordered list in un ordered list</li>
+                    <li>Another ordered item</li>
+                </ol>
+            </li>
+            <li>
+                Unordered list can has unordered list children
+                <ul>
+                    <li>Item of the children</li>
+                    <li>Another item of the children</li>
+                </ul>
+            </li>
+        </ul>
+        <hr>
+        <ol>
+            <li>
+                Ordered list is tagged in
+                <code>&lt;ol&gt;</code>
+            </li>
+            <li>
+                Each item is tagged in
+                <code>&lt;li&gt;</code>
+            </li>
+        </ol>
+        <hr>
+
+        <h2>Note</h2>
+        <p>typo.css has no target language, however it looks great in both <mark>English and Chinese</mark>.</p>
+
+        <h2>License</h2>
+        <p>MIT.</p>
+    </div>
+</div>
+<div class="half half-zh">
+    <div class="typo">
+        <h1><a href="https://github.com/xiangming/typo" target="_blank">typo.css</a></h1>
+        <p><strong>typo.css</strong> 是一个优化阅读体验的网页排版样式表。当前页面就使用了typo.css，还有<a href="http://www.reqianduan.com/">热前端</a>。</p>
+        <blockquote><p><strong>typo.css</strong> 不是复位样式表。</p>
+        </blockquote><p>它是为优化文章阅读体验而设计的。如果你正在寻找一个复位样式表，你看错代码库啦。</p>
+
+        <h2>安装</h2>
+        <p>用 <a href="http://bower.io">bower</a> 安装:</p>
+        <pre><code>$ bower install typo</code></pre>
+        <p>如果你不使用bower，你可以从<a href="https://github.com/xiangming/typo">GitHub</a>获取CSS文件。这个项目没有其他依赖。</p>
+
+        <h2>API</h2>
+        <p>对于可读的内容，使用<code>.typo</code>类包裹它们，然后一切都OK了：</p>
+        <pre><code class="lang-html">&lt;div class=&quot;typo&quot;&gt;
+            &lt;h1&gt;标题&lt;/h1&gt;
+            &lt;p&gt;段落内容。&lt;/p&gt;
+            ...
+        &lt;/div&gt;</code></pre>
+
+        <h2>标签</h2>
+        <p><strong>typo.css</strong> 仅支持在一篇文章中常用的标签元素。</p>
+        <table>
+        <thead><tr>
+        <th>标签名称</th>
+        <th>说明</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+        <td>h1 - h6</td>
+        <td>多级标题</td>
+        </tr>
+        <tr>
+        <td>p</td>
+        <td>段落</td>
+        </tr>
+        <tr>
+        <td>a</td>
+        <td>链接</td>
+        </tr>
+        <tr>
+        <td>strong b</td>
+        <td>粗体</td>
+        </tr>
+        <tr>
+        <td>em i</td>
+        <td>斜体</td>
+        </tr>
+        <tr>
+        <td>img</td>
+        <td>图片</td>
+        </tr>
+        <tr>
+        <td>figure</td>
+        <td>使用 figure 包裹图片</td>
+        </tr>
+        <tr>
+        <td>figcaption</td>
+        <td>figure的标题</td>
+        </tr>
+        <tr>
+        <td>hr</td>
+        <td>分割线</td>
+        </tr>
+        <tr>
+        <td>blockquote</td>
+        <td>引用样式</td>
+        </tr>
+        <tr>
+        <td>ul ol li</td>
+        <td>无序和有序列表</td>
+        </tr>
+        <tr>
+        <td>pre</td>
+        <td>代码块</td>
+        </tr>
+        <tr>
+        <td>code tt</td>
+        <td>行内代码</td>
+        </tr>
+        <tr>
+        <td>table</td>
+        <td>表格</td>
+        </tr>
+        <tr>
+        <td>iframe</td>
+        <td>嵌入式 iframe</td>
+        </tr>
+        </tbody>
+        </table>
+
+        <h3>标题</h3>
+        <p>标题包括 <code>&lt;h1&gt;</code>, <code>&lt;h2&gt;</code>, <code>&lt;h3&gt;</code>, <code>&lt;h4&gt;</code>, <code>&lt;h5&gt;</code> 和 <code>&lt;h6&gt;</code>标签。
+        但最常用的标签是 <code>&lt;h1&gt;</code>, <code>&lt;h2&gt;</code>, 和 <code>&lt;h3&gt;</code>。</p>
+
+        <h3>强调</h3>
+        <p>强调用在 <strong>重要的</strong> 或者 <em>有价值</em> 的内容上。 <code>&lt;b&gt;</code> and <code>&lt;i&gt;</code>
+        标签不是为此而设计的，你应该总是使用 <code>&lt;strong&gt;</code> 和 <code>&lt;em&gt;</code>标签。</p>
+
+        <h3>链接 &amp; 图片</h3>
+        <p><a href="https://github.com/xiangming/typo">链接</a>是互联网的灵魂。</p>
+        <figure><img src="http://news.oneapm.com/content/images/2015/07/u-4078431349-436439537-fm-21-gp-0.jpg" alt="beauty of web design" /></figure>
+        <p>图像可以包裹在 <code>&lt;figure&gt;</code> 标签里:</p>
+        <figure><img src="http://news.oneapm.com/content/images/2015/07/u-4078431349-436439537-fm-21-gp-0.jpg" alt="beauty of web design" /><figcaption>网页设计之美</figcaption></figure>
+
+        <h3>列表</h3>
+        <p>还有就是有序列表 <code>&lt;ol&gt;</code> 和无序列表 <code>&lt;ul&gt;</code>。</p>
+        <ul>
+        <li>无序列表使用 <code>&lt;ul&gt;</code>标签</li>
+        <li>另一个无序列表项目<ol>
+        <li>无序列表中的有序列表项目</li>
+        <li>另一个有序列表项目</li>
+        </ol>
+        </li>
+        <li>无序列表可以含有子无序列表<ul>
+        <li>子项目</li>
+        <li>另一个子项目</li>
+        </ul>
+        </li>
+        </ul>
+        <hr>
+        <ol>
+        <li>有序列表使用 <code>&lt;ol&gt;</code>标签</li>
+        <li>子项目使用 <code>&lt;li&gt;</code>标签</li>
+        </ol>
+        <hr>
+
+        <h2>注意</h2>
+        <p>typo.css 并不是为某一特定语言设计的，但是它在<mark>英文和中文</mark>上表现出色。</p>
+
+        <h2>License</h2>
+        <p>MIT.</p>
+    </div>
+</div>
+<a href="https://github.com/xiangming/typo"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/38ef81f8aca64bb9a64448d0d70f1308ef5341ab/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png"></a>
+</body>
+</html>
