@@ -1,0 +1,15 @@
+{
+  "name": "Typo",
+  "homepage": "http://typo.reqianduan.com/",
+  "description": "A better way to make your content readable.",
+  "author": "Arvin Xiang",
+  "authorURI": "http://dev.reqianduan.com",
+  "version": "1.0.0",
+  "devDependencies": {
+    "grunt": "~0.4.2",
+    "grunt-contrib-cssmin": "~0.7.0",
+    "grunt-contrib-less": "~0.11.0",
+    "grunt-contrib-watch": "~0.5.3",
+    "grunt-csscomb": "~2.0.1"
+  }
+}

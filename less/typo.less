@@ -1,0 +1,273 @@
+@charset "utf-8";
+
+.typo {
+    font: 300 18px/1.8 "Georgia", "PingFang SC", "Lantinghei SC", "Microsoft Yahei", "Hiragino Sans GB", "Microsoft Sans Serif", "WenQuanYi Micro Hei", sans-serif;
+    color: #444443;
+
+    h1, h2, h3, h4, h5, h6{
+        color: #222223;
+    }
+    h1 {
+        font-size: 1.8em;
+        margin: 0.67em 0;
+    }
+    h2 {
+        font-size: 1.5em;
+        margin: 0.83em 0;
+    }
+    h3 {
+        font-size: 1.17em;
+        margin: 1em 0;
+    }
+    h4, h5, h6 {
+        font-size: 1em;
+        margin: 1.6em 0 1em 0;
+    }
+    h6 {
+        font-weight: 500;
+    }
+
+    p {
+        margin-top: 0;
+        margin-bottom: 1.46em;
+        max-width: 100%;// 避免行内样式的width超出最大宽度
+    }
+
+    a {
+        color: #111;
+        word-wrap: break-word;
+        text-decoration: underline;
+        -moz-text-decoration-color: rgba(0, 0, 0, 0.4);
+        text-decoration-color: rgba(0, 0, 0, 0.4);
+        &:hover {
+          color: #555;
+          -moz-text-decoration-color: rgba(0, 0, 0, 0.6);
+          text-decoration-color: rgba(0, 0, 0, 0.6);
+        }
+    }
+
+    h1 a, h2 a, h3 a {
+        text-decoration: none;
+    }
+
+    strong, b {
+        font-weight: 700;
+        color: #222223;
+    }
+
+    em, i {
+        font-style: italic;
+        color: #222223;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+        margin: 0.2em 0;
+        /* Remove border on IE */
+        border: none;
+    }
+
+    figure {
+        position: relative;
+        clear: both;
+        outline: 0;
+        margin: 10px 0 30px;
+        padding: 0;
+        min-height: 100px;
+
+        img {
+            display: block;
+            max-width: 100%;
+            margin: auto auto 4px;
+            box-sizing: border-box;
+        }
+
+        figcaption {
+            position: relative;
+            width: 100%;
+            text-align: center;
+            left: 0;
+            margin-top: 10px;
+            font-weight: 400;
+            font-size: 14px;
+            color: #888;
+
+            a {
+                text-decoration: none;
+                color: #888;
+            }
+        }
+    }
+
+    hr {
+        display: block;
+        width: 14%;
+        margin: 40px auto 34px;
+        border: 0 none;
+        border-top: 3px solid #dededc;
+    }
+
+    blockquote {
+        margin: 0 0 1.64em 0;
+        border-left: 3px solid #dadada;
+        padding-left: 12px;
+        color: #666664;
+        a {
+            color: #666664;
+        }
+        @media (min-width:980px) {
+            margin-left: -24px;
+            padding-left: 20px;
+            border-width: 4px;
+            blockquote {
+                margin-left: 0;
+            }
+        }
+    }
+
+    ul, ol {
+        margin: 0 0 24px 6px;
+        padding-left: 16px;
+    }
+
+    ul {
+        list-style-type: square;
+    }
+
+    ol {
+        list-style-type: decimal;
+    }
+
+    li {
+        margin-bottom: 0.2em;
+
+        ul, ol {
+            margin-top: 0;
+            margin-bottom: 0;
+            margin-left: 14px;
+        }
+
+        ul {
+            list-style-type: disc;
+            ul {
+                list-style-type: circle;
+            }
+        }
+
+        p {
+            margin: 0.4em 0 0.6em;
+        }
+    }
+    .unstyled {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    code, tt {
+        color: #808080;
+        font-size: 0.96em;
+        background-color: #f9f9f7;
+        padding: 1px 2px;
+        border: 1px solid #dadada;
+        border-radius: 3px;
+        font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+        word-wrap: break-word;
+    }
+
+    pre {
+        margin: 1.64em 0;
+        padding: 7px;
+        border: none;
+        border-left: 3px solid #dadada;
+        padding-left: 10px;
+        overflow: auto;
+        line-height: 1.5;
+        font-size: 0.96em;
+        font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+        color: #4c4c4c;
+        background-color: #f9f9f7;
+        code, tt {
+            color: #4c4c4c;
+            border: none;
+            background: none;
+            padding: 0;
+        }
+    }
+
+    table {
+        width: 100%;
+        max-width: 100%;
+        border-collapse: collapse;
+        border-spacing: 0;
+        margin-bottom: 1.5em;
+        font-size: 0.96em;
+        box-sizing: border-box;
+
+        th, td{
+            text-align: left;
+            padding: 4px 8px 4px 10px;
+            border: 1px solid #dadada;
+        }
+
+        th{
+            background: #F1F1F1;
+            font-style: normal;
+            font-weight: 400;
+        }
+
+        td {
+            vertical-align: top;
+        }
+
+        pre {
+            margin: 0;
+            padding: 0;
+            border: none;
+            background: none;
+        }
+    }
+
+    iframe {
+        display: block;
+        max-width: 100%;
+        margin-bottom: 30px;
+    }
+
+    // Firefox 以外，元素没有下划线，需添加
+    acronym, abbr {
+        border-bottom: 1px dotted;
+        font-variant: normal;
+        cursor: help;
+    }
+
+    // 一致的 del 样式
+    del {
+        text-decoration: line-through;
+    }
+
+    // 统一上标和下标
+    sub, sup {
+        font-size: 75%;
+        line-height: 0;
+        position: relative;
+    }
+    :root sub, :root sup {
+        vertical-align: baseline; /* for ie9 and other modern browsers */
+    }
+    sup {
+        top: -0.5em;
+    }
+    sub {
+        bottom: -0.25em;
+    }
+
+    // 标记，类似于手写的荧光笔的作用
+    mark {
+        background: #fffdd1;
+        border-bottom: 1px solid #ffedce;
+        padding: 2px;
+        margin: 0 5px;
+    }
+}
