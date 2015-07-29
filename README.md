@@ -1,6 +1,8 @@
-# [typo.css](https://github.com/xiangming/typo)
+# typo.css
 
-**typo.css** is a typography stylesheet to make your content readable. Current page is using typo.css and [www.reqianduan.com](http://www.reqianduan.com/).
+**typo.css** is a typography stylesheet to make your content readable.
+
+Preview: [Typo.css](http://typo.reqianduan.com/).
 
 > **typo.css** is not a reset stylesheet.
 
@@ -28,7 +30,7 @@ For readable content, wrapper them under the `.typo` class, and everything would
 
 ## Tags
 
-**typo.css** only supports selected tags which are commonly used in an article.
+**typo.css** supports these commonly used tags.
 
 Tag Name   | Description
 ---------- | -----------------------------
@@ -47,6 +49,7 @@ pre        | code block
 code tt    | inline code
 table ..   | tables (not well designed)
 iframe     | embed iframe style
+mark       | mark some text
 
 
 ### Headings
