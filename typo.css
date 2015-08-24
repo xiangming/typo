@@ -103,10 +103,9 @@
 }
 .typo hr {
     display: block;
-    width: 14%;
-    margin: 40px auto 34px;
-    border: 0 none;
-    border-top: 3px solid #dededc;
+    margin: 40px auto;
+    border: 0;
+    border-top: 1px solid #eee;
 }
 .typo blockquote {
     padding-left: 12px;
@@ -153,7 +152,9 @@
 .typo li ul ul {
     list-style-type: circle;
 }
-.typo li p {
+.typo li p,
+.typo li pre,
+.typo li blockquote {
     margin: .4em 0 .6em;
 }
 .typo .unstyled {
@@ -257,4 +258,18 @@
     margin: 0 5px;
     background: #fffdd1;
     border-bottom: 1px solid #ffedce;
+}
+@media (max-width: 767px) {
+    .typo h1 {
+        font-size: 1.4em;
+    }
+    .typo h2 {
+        font-size: 1.2em;
+    }
+    .typo h3,
+  .typo h4,
+  .typo h5,
+  .typo h6 {
+        font-size: 1em;
+    }
 }
