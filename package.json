@@ -1,7 +1,7 @@
 {
   "name": "Typo",
   "homepage": "http://typo.reqianduan.com/",
-  "description": "A typography stylesheet to make your content readable.",
+  "description": "A typography stylesheet to make your content more readable.",
   "author": "Arvin Xiang",
   "authorURI": "http://dev.reqianduan.com",
   "version": "1.0.4",
@@ -9,7 +9,6 @@
     "grunt": "~0.4.2",
     "grunt-contrib-cssmin": "~0.7.0",
     "grunt-contrib-less": "~0.11.0",
-    "grunt-contrib-watch": "~0.5.3",
-    "grunt-csscomb": "~2.0.1"
+    "grunt-contrib-watch": "~0.5.3"
   }
 }

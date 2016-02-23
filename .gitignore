@@ -5,6 +5,7 @@ debug.log
 node_modules/
 bower_components/
 release/
+css/
 __MACOSX/
 public/
 .deploy/

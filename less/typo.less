@@ -26,45 +26,51 @@
         font-weight: 500;
     }
 
-    p {
-        margin-top: 0;
-        margin-bottom: 1.46em;
-        max-width: 100%;// 避免行内样式的width超出最大宽度
+    ul,ol {
+        margin: 0 0 30px;
+
+        li {
+            // line-height: 21px; // 太密集
+            padding: 10px 0;
+        }
+    }
+    ol {
+        counter-reset: ol-counter;
     }
 
-    a {
-        color: #111;
-        word-wrap: break-word;
-        text-decoration: underline;
-        -moz-text-decoration-color: rgba(0, 0, 0, 0.4);
-        text-decoration-color: rgba(0, 0, 0, 0.4);
-        &:focus, &:hover {
-          color: #555;
-          -moz-text-decoration-color: rgba(0, 0, 0, 0.6);
-          text-decoration-color: rgba(0, 0, 0, 0.6);
+    p {
+        margin-top: 0;
+        margin-bottom: 1em; // 1em够用
+        max-width: 100%; // 避免行内样式的width超出最大宽度
+
+        & + h1, & + h2, & + h3, & + h4, & + h5, & + h6 {
+            margin-top: 40px;
+            margin-bottom: 30px
         }
     }
 
-    h1 a, h2 a, h3 a {
-        text-decoration: none;
+    a {
+        color: inherit;
+        word-wrap: break-word;
+
+        &:focus, &:hover {
+          text-decoration: underline;
+        }
     }
 
     strong, b {
         font-weight: 700;
-        color: #222223;
     }
 
     em, i {
         font-style: italic;
-        color: #222223;
     }
 
     img {
         max-width: 100%;
         height: auto;
         margin: 0.2em 0;
-        /* Remove border on IE */
-        border: none;
+        border: none; /* Remove border on IE */
     }
 
     figure {
@@ -107,60 +113,27 @@
     }
 
     blockquote {
-        margin: 0 0 1.64em 0;
-        border-left: 3px solid #dadada;
-        padding-left: 12px;
-        color: #666664;
-        a {
-            color: #666664;
-        }
-        @media (min-width:980px) {
-            margin-left: -24px;
-            padding-left: 20px;
-            border-width: 4px;
-            blockquote {
-                margin-left: 0;
-            }
-        }
-    }
+        font-size: 18px;
+        line-height: 36px;
+        font-weight: 300;
+        color: #aaa;
+        padding-left: 55px;
+        margin: 0 0 30px;
+        position: relative;
 
-    ul, ol {
-        margin: 0 0 24px 6px;
-        padding-left: 16px;
-    }
-
-    ul {
-        list-style-type: square;
-    }
-
-    ol {
-        list-style-type: decimal;
-    }
-
-    li {
-        margin-bottom: 0.2em;
-
-        ul, ol {
-            margin-top: 0;
-            margin-bottom: 0;
-            margin-left: 14px;
+        &:last-child {
+            margin-bottom: 0
         }
 
-        ul {
-            list-style-type: disc;
-            ul {
-                list-style-type: circle;
-            }
+        &:before {
+            font-size: 60px;
+            content: '\201C';
+            color: #ddd;
+            font-family: Georgia,"Times New Roman",Times,serif;
+            position: absolute;
+            top: 15px;
+            left: 10px
         }
-
-        p, pre, blockquote {
-            margin: 0.4em 0 0.6em;
-        }
-    }
-    .unstyled {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
     }
 
     code, tt {
@@ -250,8 +223,7 @@
         position: relative;
     }
     :root sub, :root sup {
-        /* for ie9 and other modern browsers */
-        vertical-align: baseline;
+        vertical-align: baseline; /* for ie9 and other modern browsers */
     }
     sup {
         top: -0.5em;

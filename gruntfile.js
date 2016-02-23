@@ -5,12 +5,12 @@ module.exports = function(grunt){
 		banner: '/*!\n' +
 	            ' * <%= pkg.name %> v<%= pkg.version %> (<%= pkg.homepage %>)\n' +
 	            ' * <%= pkg.description%>\n' +
-            	' * Copyright <%= grunt.template.today("yyyy") %> <%= pkg.author %>.\n' +
-	            ' */',
+	            ' * © <%= grunt.template.today("yyyy") %> <%= pkg.author%>. All rights reserved.\n' +
+	            ' */\n',
 		less: {
 			build: {
 				files: {
-					'typo.css': 'less/typo.less'
+					'css/typo.css': 'less/typo.less'
 				}
 			}
 		},
@@ -21,7 +21,7 @@ module.exports = function(grunt){
 			},
 			build: {
 				files: {
-					'typo.min.css': 'typo.css'
+					'css/typo.min.css': 'css/typo.css'
 				}
 			}
 		},
