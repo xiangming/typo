@@ -1,7 +1,7 @@
 @charset "utf-8";
 .typo {
-    font: 300 18px/1.8 "Georgia", "PingFang SC", "Lantinghei SC", "Microsoft Yahei", "Hiragino Sans GB", "Microsoft Sans Serif", "WenQuanYi Micro Hei", sans-serif;
-    color: #444443;
+  font: 300 18px/1.8 "Georgia", "PingFang SC", "Lantinghei SC", "Microsoft Yahei", "Hiragino Sans GB", "Microsoft Sans Serif", "WenQuanYi Micro Hei", sans-serif;
+  color: #444443;
 }
 .typo h1,
 .typo h2,
@@ -9,265 +9,263 @@
 .typo h4,
 .typo h5,
 .typo h6 {
+  color: #222223;
   /* 标题应该更贴紧内容，并与其他块区分，margin 值要相应做优化 */
-    margin-top: 1.5em;
-    margin-bottom: .5em;
-    color: #222223;
+  margin-top: 1.5em;
+  margin-bottom: 0.5em;
 }
 .typo h1 {
-    font-size: 1.8em;
+  font-size: 1.8em;
 }
 .typo h2 {
-    font-size: 1.5em;
+  font-size: 1.5em;
 }
 .typo h3 {
-    font-size: 1.2em;
+  font-size: 1.2em;
 }
 .typo h4,
 .typo h5,
 .typo h6 {
-    font-size: 1em;
+  font-size: 1em;
 }
 .typo h6 {
-    font-weight: 500;
+  font-weight: 500;
 }
 .typo p {
-    max-width: 100%;
-    margin-top: 0;
-    margin-bottom: 1.46em;
+  margin-top: 0;
+  margin-bottom: 1.46em;
+  max-width: 100%;
 }
 .typo a {
-    color: #111;
-    text-decoration: underline;
-    word-wrap: break-word;
-
-    -moz-text-decoration-color: rgba(0, 0, 0, .4);
-         text-decoration-color: rgba(0, 0, 0, .4);
+  color: #111;
+  word-wrap: break-word;
+  text-decoration: underline;
+  -moz-text-decoration-color: rgba(0, 0, 0, 0.4);
+  text-decoration-color: rgba(0, 0, 0, 0.4);
 }
 .typo a:focus,
 .typo a:hover {
-    color: #555;
-
-    -moz-text-decoration-color: rgba(0, 0, 0, .6);
-         text-decoration-color: rgba(0, 0, 0, .6);
+  color: #555;
+  -moz-text-decoration-color: rgba(0, 0, 0, 0.6);
+  text-decoration-color: rgba(0, 0, 0, 0.6);
 }
 .typo h1 a,
 .typo h2 a,
 .typo h3 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 .typo strong,
 .typo b {
-    font-weight: 700;
-    color: #222223;
+  font-weight: 700;
+  color: #222223;
 }
 .typo em,
 .typo i {
-    font-style: italic;
-    color: #222223;
+  font-style: italic;
+  color: #222223;
 }
 .typo img {
-    max-width: 100%;
-    height: auto;
-    margin: .2em 0;
+  max-width: 100%;
+  height: auto;
+  margin: 0.2em 0;
   /* Remove border on IE */
-    border: none;
+  border: none;
 }
 .typo figure {
-    position: relative;
-    min-height: 100px;
-    padding: 0;
-    margin: 10px 0 30px;
-    clear: both;
-    outline: 0;
+  position: relative;
+  clear: both;
+  outline: 0;
+  margin: 10px 0 30px;
+  padding: 0;
+  min-height: 100px;
 }
 .typo figure img {
-    display: block;
-    max-width: 100%;
-    box-sizing: border-box;
-    margin: auto auto 4px;
+  display: block;
+  max-width: 100%;
+  margin: auto auto 4px;
+  box-sizing: border-box;
 }
 .typo figure figcaption {
-    position: relative;
-    left: 0;
-    width: 100%;
-    margin-top: 10px;
-    font-size: 14px;
-    font-weight: 400;
-    color: #888;
-    text-align: center;
+  position: relative;
+  width: 100%;
+  text-align: center;
+  left: 0;
+  margin-top: 10px;
+  font-weight: 400;
+  font-size: 14px;
+  color: #888;
 }
 .typo figure figcaption a {
-    color: #888;
-    text-decoration: none;
+  text-decoration: none;
+  color: #888;
 }
 .typo hr {
-    display: block;
-    margin: 40px auto;
-    border: 0;
-    border-top: 1px solid #eee;
+  display: block;
+  margin: 40px auto;
+  border: 0;
+  border-top: 1px solid #eee;
 }
 .typo blockquote {
-    padding-left: 12px;
-    margin: 0 0 1.64em 0;
-    color: #666664;
-    border-left: 3px solid #dadada;
+  margin: 0 0 1.64em 0;
+  border-left: 3px solid #dadada;
+  padding-left: 12px;
+  color: #666664;
 }
 .typo blockquote a {
-    color: #666664;
+  color: #666664;
 }
 @media (min-width: 980px) {
-    .typo blockquote {
-        padding-left: 20px;
-        margin-left: -24px;
-        border-width: 4px;
-    }
-    .typo blockquote blockquote {
-        margin-left: 0;
-    }
+  .typo blockquote {
+    margin-left: -24px;
+    padding-left: 20px;
+    border-width: 4px;
+  }
+  .typo blockquote blockquote {
+    margin-left: 0;
+  }
 }
 .typo ul,
 .typo ol {
-    padding-left: 16px;
-    margin: 0 0 24px 6px;
+  margin: 0 0 24px 6px;
+  padding-left: 16px;
 }
 .typo ul {
-    list-style-type: square;
+  list-style-type: square;
 }
 .typo ol {
-    list-style-type: decimal;
+  list-style-type: decimal;
 }
 .typo li {
-    margin-bottom: .2em;
+  margin-bottom: 0.2em;
 }
 .typo li ul,
 .typo li ol {
-    margin-top: 0;
-    margin-bottom: 0;
-    margin-left: 14px;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 14px;
 }
 .typo li ul {
-    list-style-type: disc;
+  list-style-type: disc;
 }
 .typo li ul ul {
-    list-style-type: circle;
+  list-style-type: circle;
 }
 .typo li p,
 .typo li pre,
 .typo li blockquote {
-    margin: .4em 0 .6em;
+  margin: 0.4em 0 0.6em;
 }
 .typo .unstyled {
-    padding: 0;
-    margin: 0;
-    list-style-type: none;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 .typo code,
 .typo tt {
-    padding: 1px 2px;
-    font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
-    font-size: .8em;
-    color: #808080;
-    word-wrap: break-word;
-    background-color: #f9f9f7;
-    border: 1px solid #dadada;
-    border-radius: 3px;
+  color: #808080;
+  font-size: 0.8em;
+  background-color: #f9f9f7;
+  padding: 1px 2px;
+  border: 1px solid #dadada;
+  border-radius: 3px;
+  font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+  word-wrap: break-word;
 }
 .typo pre {
-    padding: 15px;
-    margin: 1.64em 0;
-    overflow: auto;
-    font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
-    font-size: .96em;
-    line-height: 1.5;
-    color: #4c4c4c;
-    background-color: #f9f9f7;
-    border: none;
+  margin: 1.64em 0;
+  padding: 15px;
+  border: none;
+  overflow: auto;
+  line-height: 1.5;
+  font-size: 0.96em;
+  font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+  color: #4c4c4c;
+  background-color: #f9f9f7;
 }
 .typo pre code,
 .typo pre tt {
-    padding: 0;
-    color: #4c4c4c;
-    background: none;
-    border: none;
+  color: #4c4c4c;
+  border: none;
+  background: none;
+  padding: 0;
 }
 .typo table {
-    width: 100%;
-    max-width: 100%;
-    box-sizing: border-box;
-    margin-bottom: 1.5em;
-    font-size: .96em;
-    border-spacing: 0;
-    border-collapse: collapse;
+  width: 100%;
+  max-width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  margin-bottom: 1.5em;
+  font-size: 0.96em;
+  box-sizing: border-box;
 }
 .typo table th,
 .typo table td {
-    padding: 4px 8px 4px 10px;
-    text-align: left;
-    border: 1px solid #dadada;
+  text-align: left;
+  padding: 4px 8px 4px 10px;
+  border: 1px solid #dadada;
 }
 .typo table th {
-    font-style: normal;
-    font-weight: 400;
-    background: #f1f1f1;
+  background: #F1F1F1;
+  font-style: normal;
+  font-weight: 400;
 }
 .typo table td {
-    vertical-align: top;
+  vertical-align: top;
 }
 .typo table pre {
-    padding: 0;
-    margin: 0;
-    background: none;
-    border: none;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background: none;
 }
 .typo iframe {
-    display: block;
-    max-width: 100%;
-    margin-bottom: 30px;
+  display: block;
+  max-width: 100%;
+  margin-bottom: 30px;
 }
 .typo acronym,
 .typo abbr {
-    font-variant: normal;
-    cursor: help;
-    border-bottom: 1px dotted;
+  border-bottom: 1px dotted;
+  font-variant: normal;
+  cursor: help;
 }
 .typo del {
-    text-decoration: line-through;
+  text-decoration: line-through;
 }
 .typo sub,
 .typo sup {
-    position: relative;
-    font-size: 75%;
-    line-height: 0;
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
 }
 .typo :root sub,
 .typo :root sup {
   /* for ie9 and other modern browsers */
-    vertical-align: baseline;
+  vertical-align: baseline;
 }
 .typo sup {
-    top: -.5em;
+  top: -0.5em;
 }
 .typo sub {
-    bottom: -.25em;
+  bottom: -0.25em;
 }
 .typo mark {
-    padding: 2px;
-    margin: 0 5px;
-    background: #fffdd1;
-    border-bottom: 1px solid #ffedce;
+  background: #fffdd1;
+  border-bottom: 1px solid #ffedce;
+  padding: 2px;
+  margin: 0 5px;
 }
 @media (max-width: 767px) {
-    .typo h1 {
-        font-size: 1.4em;
-    }
-    .typo h2 {
-        font-size: 1.2em;
-    }
-    .typo h3,
+  .typo h1 {
+    font-size: 1.4em;
+  }
+  .typo h2 {
+    font-size: 1.2em;
+  }
+  .typo h3,
   .typo h4,
   .typo h5,
   .typo h6 {
-        font-size: 1em;
-    }
+    font-size: 1em;
+  }
 }

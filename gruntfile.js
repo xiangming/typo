@@ -14,16 +14,6 @@ module.exports = function(grunt){
 				}
 			}
 		},
-		csscomb: {
-			options: {
-				config: 'less/.csscomb.json'
-			},
-			build: {
-				files: {
-					'typo.css': 'typo.css'
-				}
-			}
-		},
 		cssmin: {
 			options: {
 				banner: '<%= banner %>',
@@ -41,7 +31,7 @@ module.exports = function(grunt){
 					'less/*.less',
 					'less/*/*.less'
 				],
-				tasks: ['less', 'csscomb', 'cssmin']
+				tasks: ['less', 'cssmin']
 			}
 		}
 	});
@@ -49,7 +39,6 @@ module.exports = function(grunt){
 	grunt.loadNpmTasks('grunt-contrib-less');
 	grunt.loadNpmTasks('grunt-contrib-cssmin');
 	grunt.loadNpmTasks('grunt-contrib-watch');
-	grunt.loadNpmTasks('grunt-csscomb');
 	//制定任务
-	grunt.registerTask('default',['less', 'csscomb', 'cssmin', 'watch']);
+	grunt.registerTask('default',['less', 'cssmin', 'watch']);
 }
