@@ -4,7 +4,7 @@
   "description": "A typography stylesheet to make your content more readable.",
   "author": "Arvin Xiang",
   "authorURI": "http://dev.reqianduan.com",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "devDependencies": {
     "grunt": "~0.4.2",
     "grunt-contrib-cssmin": "~0.7.0",
