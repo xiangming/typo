@@ -1,12 +1,8 @@
 # typo.css
 
-**typo.css** is a typography stylesheet to make your content readable.
+**typo.css** is a typography stylesheet designed for better reading experience.
 
-Preview: [Typo.css](http://typo.reqianduan.com/).
-
-> **typo.css** is not a reset stylesheet.
-
-It is designed for readable article content. If you are looking for a reset css, you are watching the wrong repository.
+Demo: [Typo.css](http://typo.reqianduan.com/).
 
 ## Installation
 
@@ -54,7 +50,7 @@ mark       | mark some text
 
 ### Headings
 
-Headings are tags `<h1>`, `<h2>`, `<h3>`, `<h4>`, `<h5>` and `<h6>`. But the most commonly used tags are `<h1>`, `<h2>`, and `<h3>`.
+Headings are tags `<h1>`, `<h2>`, `<h3>`, `<h4>`, `<h5>` and `<h6>`.
 
 ### Emphasis
 
@@ -64,11 +60,11 @@ Emphasis works on something **important** or *valuable*. `<b>` and `<i>` are not
 
 [Links](https://github.com/xiangming/typo) are the soul of internet.
 
-![beauty of web design](http://news.oneapm.com/content/images/2015/07/u-4078431349-436439537-fm-21-gp-0.jpg)
+![beauty of web design](https://images.unsplash.com/photo-1429277005502-eed8e872fe52?crop=entropy&fit=crop&fm=jpg&h=300&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=600)
 
 Images can be wrappered in a `<figure>` tag:
 
-![beauty of web design](http://news.oneapm.com/content/images/2015/07/u-4078431349-436439537-fm-21-gp-0.jpg "The Beauty of Web Design")
+![beauty of web design](https://images.unsplash.com/photo-1429277005502-eed8e872fe52?crop=entropy&fit=crop&fm=jpg&h=300&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=600 "The Beauty of Web Design")
 
 ### List
 
@@ -92,8 +88,6 @@ There is ordered list `<ol>` and unordered list `<ul>`.
 ## Note
 
 typo.css has no target language, however it looks great in both English and Chinese.
-
-> typo.css 并不是为某一特定语言设计的，但是它在英文和中文上表现出色。
 
 ## License
 
