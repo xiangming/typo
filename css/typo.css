@@ -1,7 +1,7 @@
 @charset 'utf-8';
 /*!
  * Typo v1.0.6 (http://typo.reqianduan.com/)
- * A typography stylesheet designed for the reading experience.
+ * A typography stylesheet designed for better reading experience.
  * © 2017 Arvin Xiang. All rights reserved.
  */
 .typo {
@@ -140,7 +140,7 @@
   word-wrap: break-word;
   color: #808080;
   border-radius: 3px;
-  background-color: #EEE;
+  background-color: #eee;
 }
 .typo pre {
   font-family: Menlo, Monaco, Consolas, 'Courier New', monospace;
@@ -219,6 +219,10 @@
 }
 .typo sub {
   bottom: -0.25em;
+}
+.typo small,
+.typo .small {
+  font-size: .5em;
 }
 .typo mark {
   margin: 0 5px;
