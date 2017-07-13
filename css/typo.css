@@ -1,6 +1,11 @@
-@charset "utf-8";
+@charset 'utf-8';
+/*!
+ * Typo v1.0.6 (http://typo.reqianduan.com/)
+ * A typography stylesheet designed for the reading experience.
+ * © 2017 Arvin Xiang. All rights reserved.
+ */
 .typo {
-  font: 300 18px/1.8 "Georgia", "PingFang SC", "Lantinghei SC", "Microsoft Yahei", "Hiragino Sans GB", "Microsoft Sans Serif", "WenQuanYi Micro Hei", sans-serif;
+  font: 300 16px/1.8 'Georgia', 'PingFang SC', 'Lantinghei SC', 'Microsoft Yahei', 'Hiragino Sans GB', 'Microsoft Sans Serif', 'WenQuanYi Micro Hei', sans-serif;
   color: #444443;
 }
 .typo h1,
@@ -9,10 +14,10 @@
 .typo h4,
 .typo h5,
 .typo h6 {
-  color: #222223;
   /* 标题应该更贴紧内容，并与其他块区分，margin 值要相应做优化 */
   margin-top: 1.5em;
-  margin-bottom: 0.5em;
+  margin-bottom: .5em;
+  color: #222223;
 }
 .typo h1 {
   font-size: 1.8em;
@@ -33,23 +38,23 @@
 }
 .typo ul,
 .typo ol {
-  margin: 0 0 30px;
+  margin: 0 0 15px;
 }
 .typo ul li,
 .typo ol li {
-  padding: 10px 0;
+  line-height: 1.8;
 }
 .typo ol {
   counter-reset: ol-counter;
 }
 .typo p {
+  max-width: 100%;
   margin-top: 0;
   margin-bottom: 1em;
-  max-width: 100%;
 }
 .typo a {
-  word-wrap: break-word;
   text-decoration: none;
+  word-wrap: break-word;
 }
 .typo a:focus,
 .typo a:hover {
@@ -66,32 +71,32 @@
 .typo img {
   max-width: 100%;
   height: auto;
-  margin: 0.2em 0;
+  margin: .2em 0;
   border: none;
   /* Remove border on IE */
 }
 .typo figure {
   position: relative;
   clear: both;
-  outline: 0;
+  min-height: 100px;
   margin: 10px 0 30px;
   padding: 0;
-  min-height: 100px;
+  outline: 0;
 }
 .typo figure img {
   display: block;
+  box-sizing: border-box;
   max-width: 100%;
   margin: auto auto 4px;
-  box-sizing: border-box;
 }
 .typo figure figcaption {
-  position: relative;
-  width: 100%;
-  text-align: center;
-  left: 0;
-  margin-top: 10px;
-  font-weight: 400;
   font-size: 14px;
+  font-weight: 400;
+  position: relative;
+  left: 0;
+  width: 100%;
+  margin-top: 10px;
+  text-align: center;
   color: #888;
 }
 .typo figure figcaption a {
@@ -100,79 +105,80 @@
 }
 .typo hr {
   display: block;
-  margin: 40px auto;
+  margin: 2em 0;
   border: 0;
   border-top: 1px solid #eee;
 }
 .typo blockquote {
-  font-size: 18px;
-  line-height: 36px;
+  font-size: 1em;
   font-weight: 300;
-  color: #aaa;
-  padding-left: 55px;
-  margin: 0 0 30px;
   position: relative;
+  margin: 0 0 30px;
+  padding-top: 10px;
+  padding-left: 50px;
+  color: #aaa;
+  border: none;
+  /* reset bootstrap */
 }
 .typo blockquote:last-child {
   margin-bottom: 0;
 }
 .typo blockquote:before {
+  font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: 60px;
+  position: absolute;
+  top: -25px;
+  left: 10px;
   content: '\201C';
   color: #ddd;
-  font-family: Georgia, "Times New Roman", Times, serif;
-  position: absolute;
-  top: 15px;
-  left: 10px;
 }
 .typo code,
 .typo tt {
-  color: #808080;
-  font-size: 0.8em;
-  background-color: #f9f9f7;
-  padding: 1px 2px;
-  border: 1px solid #dadada;
-  border-radius: 3px;
-  font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+  font-family: Menlo, Monaco, Consolas, 'Courier New', monospace;
+  font-size: .8em;
+  padding: 2px 4px;
   word-wrap: break-word;
+  color: #808080;
+  border-radius: 3px;
+  background-color: #EEE;
 }
 .typo pre {
+  font-family: Menlo, Monaco, Consolas, 'Courier New', monospace;
+  font-size: .96em;
+  line-height: 1.5;
+  overflow: auto;
   margin: 1.64em 0;
   padding: 15px;
-  border: none;
-  overflow: auto;
-  line-height: 1.5;
-  font-size: 0.96em;
-  font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
   color: #4c4c4c;
+  border: none;
   background-color: #f9f9f7;
 }
 .typo pre code,
 .typo pre tt {
+  padding: 0;
   color: #4c4c4c;
   border: none;
   background: none;
-  padding: 0;
 }
 .typo table {
+  font-size: .96em;
+  box-sizing: border-box;
   width: 100%;
   max-width: 100%;
-  border-collapse: collapse;
-  border-spacing: 0;
   margin-bottom: 1.5em;
-  font-size: 0.96em;
-  box-sizing: border-box;
+  border-spacing: 0;
+  border-collapse: collapse;
 }
 .typo table th,
 .typo table td {
-  text-align: left;
   padding: 4px 8px 4px 10px;
+  text-align: left;
   border: 1px solid #dadada;
 }
 .typo table th {
-  background: #F1F1F1;
-  font-style: normal;
   font-weight: 400;
+  font-style: normal;
+  background: #f1f1f1;
 }
 .typo table td {
   vertical-align: top;
@@ -190,9 +196,9 @@
 }
 .typo acronym,
 .typo abbr {
-  border-bottom: 1px dotted;
   font-variant: normal;
   cursor: help;
+  border-bottom: 1px dotted;
 }
 .typo del {
   text-decoration: line-through;
@@ -215,10 +221,10 @@
   bottom: -0.25em;
 }
 .typo mark {
-  background: #fffdd1;
-  border-bottom: 1px solid #ffedce;
-  padding: 2px;
   margin: 0 5px;
+  padding: 2px 4px;
+  border-bottom: 1px solid #ffedce;
+  background: #fffdd1;
 }
 @media (max-width: 767px) {
   .typo h1 {
