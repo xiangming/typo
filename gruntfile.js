@@ -8,6 +8,10 @@ module.exports = function(grunt){
 	            ' * © <%= grunt.template.today("yyyy") %> <%= pkg.author%>. All rights reserved.\n' +
 	            ' */\n',
 		less: {
+			options: {
+				banner: '<%= banner %>',
+				keepSpecialComments: '0'
+			},
 			build: {
 				files: {
 					'css/typo.css': 'less/typo.less'

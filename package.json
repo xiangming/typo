@@ -1,10 +1,10 @@
 {
   "name": "Typo",
   "homepage": "http://typo.reqianduan.com/",
-  "description": "A typography stylesheet to make your content more readable.",
+  "description": "A typography stylesheet designed for better reading experience.",
   "author": "Arvin Xiang",
-  "authorURI": "http://dev.reqianduan.com",
-  "version": "1.0.5",
+  "authorURI": "http://arvinxiang.com",
+  "version": "1.0.6",
   "devDependencies": {
     "grunt": "~0.4.2",
     "grunt-contrib-cssmin": "~0.7.0",

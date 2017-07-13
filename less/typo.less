@@ -1,14 +1,20 @@
-@charset "utf-8";
+@charset 'utf-8';
 
 .typo {
-    font: 300 18px/1.8 "Georgia", "PingFang SC", "Lantinghei SC", "Microsoft Yahei", "Hiragino Sans GB", "Microsoft Sans Serif", "WenQuanYi Micro Hei", sans-serif;
-    color: #444443;
+    font: 300 16px/1.8 'Georgia', 'PingFang SC', 'Lantinghei SC', 'Microsoft Yahei', 'Hiragino Sans GB', 'Microsoft Sans Serif', 'WenQuanYi Micro Hei', sans-serif;
 
-    h1, h2, h3, h4, h5, h6{
-        color: #222223;
+    color: #444443;
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
         /* 标题应该更贴紧内容，并与其他块区分，margin 值要相应做优化 */
         margin-top: 1.5em;
-        margin-bottom: 0.5em;
+        margin-bottom: .5em;
+
+        color: #222223;
     }
     h1 {
         font-size: 1.8em;
@@ -19,222 +25,241 @@
     h3 {
         font-size: 1.2em;
     }
-    h4, h5, h6 {
+    h4,
+    h5,
+    h6 {
         font-size: 1em;
     }
     h6 {
         font-weight: 500;
     }
-
-    ul,ol {
-        margin: 0 0 30px;
-
+    ul,
+    ol {
+        margin: 0 0 15px;
         li {
-            // line-height: 21px; // 太密集
-            padding: 10px 0;
+            line-height: 1.8;
         }
     }
     ol {
         counter-reset: ol-counter;
     }
-
     p {
+        max-width: 100%; // 避免行内样式的width超出最大宽度
         margin-top: 0;
         margin-bottom: 1em; // 1em够用
-        max-width: 100%; // 避免行内样式的width超出最大宽度
     }
-
     a {
-        word-wrap: break-word;
         text-decoration: none;
-
-        &:focus, &:hover {
-          text-decoration: underline;
+        word-wrap: break-word;
+        &:focus,
+        &:hover {
+            text-decoration: underline;
         }
     }
-
-    strong, b {
+    strong,
+    b {
         font-weight: 700;
     }
-
-    em, i {
+    em,
+    i {
         font-style: italic;
     }
-
     img {
         max-width: 100%;
         height: auto;
-        margin: 0.2em 0;
+        margin: .2em 0;
+
         border: none; /* Remove border on IE */
     }
-
     figure {
         position: relative;
+
         clear: both;
-        outline: 0;
+
+        min-height: 100px;
         margin: 10px 0 30px;
         padding: 0;
-        min-height: 100px;
 
+        outline: 0;
         img {
             display: block;
+
+            box-sizing: border-box;
             max-width: 100%;
             margin: auto auto 4px;
-            box-sizing: border-box;
         }
-
         figcaption {
-            position: relative;
-            width: 100%;
-            text-align: center;
-            left: 0;
-            margin-top: 10px;
-            font-weight: 400;
             font-size: 14px;
-            color: #888;
+            font-weight: 400;
 
+            position: relative;
+            left: 0;
+
+            width: 100%;
+            margin-top: 10px;
+
+            text-align: center;
+
+            color: #888;
             a {
                 text-decoration: none;
+
                 color: #888;
             }
         }
     }
-
     hr {
         display: block;
-        margin: 40px auto;
+
+        margin: 2em 0;
+
         border: 0;
         border-top: 1px solid #eee;
     }
-
     blockquote {
-        font-size: 18px;
-        line-height: 36px;
+        font-size: 1em;
         font-weight: 300;
-        color: #aaa;
-        padding-left: 55px;
-        margin: 0 0 30px;
+
         position: relative;
 
+        margin: 0 0 30px;
+        padding-top: 10px;
+        padding-left: 50px;
+
+        color: #aaa;
+        border: none; /* reset bootstrap */
         &:last-child {
-            margin-bottom: 0
+            margin-bottom: 0;
         }
-
         &:before {
+            font-family: Georgia,'Times New Roman',Times,serif;
             font-size: 60px;
-            content: '\201C';
-            color: #ddd;
-            font-family: Georgia,"Times New Roman",Times,serif;
+
             position: absolute;
-            top: 15px;
-            left: 10px
+            top: -25px;
+            left: 10px;
+
+            content: '\201C';
+
+            color: #ddd;
         }
     }
+    code,
+    tt {
+        font-family: Menlo, Monaco, Consolas, 'Courier New', monospace;
+        font-size: .8em;
 
-    code, tt {
-        color: #808080;
-        font-size: 0.8em;
-        background-color: #f9f9f7;
-        padding: 1px 2px;
-        border: 1px solid #dadada;
-        border-radius: 3px;
-        font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+        padding: 2px 4px;
+
         word-wrap: break-word;
-    }
 
+        color: #808080;
+        // border: 1px solid #dadada;
+        border-radius: 3px;
+        background-color: #EEE;
+    }
     pre {
+        font-family: Menlo, Monaco, Consolas, 'Courier New', monospace;
+        font-size: .96em;
+        line-height: 1.5;
+
+        overflow: auto;
+
         margin: 1.64em 0;
         padding: 15px;
-        border: none;
-        overflow: auto;
-        line-height: 1.5;
-        font-size: 0.96em;
-        font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+
         color: #4c4c4c;
+        border: none;
         background-color: #f9f9f7;
-        code, tt {
+        code,
+        tt {
+            padding: 0;
+
             color: #4c4c4c;
             border: none;
             background: none;
-            padding: 0;
         }
     }
-
     table {
+        font-size: .96em;
+
+        box-sizing: border-box;
         width: 100%;
         max-width: 100%;
-        border-collapse: collapse;
-        border-spacing: 0;
         margin-bottom: 1.5em;
-        font-size: 0.96em;
-        box-sizing: border-box;
 
-        th, td{
-            text-align: left;
+        border-spacing: 0;
+        border-collapse: collapse;
+        th,
+        td {
             padding: 4px 8px 4px 10px;
+
+            text-align: left;
+
             border: 1px solid #dadada;
         }
-
-        th{
-            background: #F1F1F1;
-            font-style: normal;
+        th {
             font-weight: 400;
-        }
+            font-style: normal;
 
+            background: #f1f1f1;
+        }
         td {
             vertical-align: top;
         }
-
         pre {
             margin: 0;
             padding: 0;
+
             border: none;
             background: none;
         }
     }
-
     iframe {
         display: block;
+
         max-width: 100%;
         margin-bottom: 30px;
     }
-
     // Firefox 以外，元素没有下划线，需添加
-    acronym, abbr {
-        border-bottom: 1px dotted;
+    acronym,
+    abbr {
         font-variant: normal;
-        cursor: help;
-    }
 
+        cursor: help;
+
+        border-bottom: 1px dotted;
+    }
     // 一致的 del 样式
     del {
         text-decoration: line-through;
     }
-
     // 统一上标和下标
-    sub, sup {
+    sub,
+    sup {
         font-size: 75%;
         line-height: 0;
+
         position: relative;
     }
-    :root sub, :root sup {
+    :root sub,
+    :root sup {
         vertical-align: baseline; /* for ie9 and other modern browsers */
     }
     sup {
-        top: -0.5em;
+        top: -.5em;
     }
     sub {
-        bottom: -0.25em;
+        bottom: -.25em;
     }
-
     // 标记，类似于手写的荧光笔的作用
     mark {
-        background: #fffdd1;
-        border-bottom: 1px solid #ffedce;
-        padding: 2px;
         margin: 0 5px;
-    }
+        padding: 2px 4px;
 
+        border-bottom: 1px solid #ffedce;
+        background: #fffdd1;
+    }
     @media (max-width:767px) {
         h1 {
             font-size: 1.4em;
@@ -242,7 +267,10 @@
         h2 {
             font-size: 1.2em;
         }
-        h3, h4, h5, h6 {
+        h3,
+        h4,
+        h5,
+        h6 {
             font-size: 1em;
         }
     }
